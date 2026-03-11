@@ -3,54 +3,102 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Elements of Design Project</title>
+<title>Elements of Design</title>
 
 <style>
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family: "Segoe UI", Arial, sans-serif;
 margin:0;
-background:#eef2f5;
+background:#f3f4f6;
+color:#333;
 }
 
 header{
-background:#1f2937;
+background:#111827;
 color:white;
-padding:25px;
 text-align:center;
+padding:40px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+opacity:0.8;
 }
 
 nav{
-background:#374151;
-padding:12px;
-text-align:center;
+background:#1f2937;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 nav a{
 color:white;
-margin:15px;
+padding:14px 18px;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
 }
 
-section{
-max-width:1000px;
+nav a:hover{
+background:#374151;
+}
+
+.container{
+max-width:1100px;
 margin:auto;
-padding:40px;
+padding:40px 20px;
 }
 
 .card{
 background:white;
 padding:25px;
-margin-bottom:25px;
-border-radius:8px;
-box-shadow:0 3px 8px rgba(0,0,0,0.15);
+margin-bottom:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+margin-top:0;
+color:#111827;
+}
+
+.example-img{
+width:100%;
+max-width:350px;
+border-radius:6px;
+margin-top:10px;
+}
+
+.video-box{
+margin-top:15px;
+padding:20px;
+background:#e5e7eb;
+border-radius:6px;
+text-align:center;
+font-style:italic;
+}
+
+.swot{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.swot div{
+background:#f9fafb;
+padding:15px;
+border-radius:6px;
 }
 
 footer{
-background:#1f2937;
-color:white;
 text-align:center;
+background:#111827;
+color:white;
 padding:20px;
 margin-top:40px;
 }
@@ -63,7 +111,7 @@ margin-top:40px;
 
 <header>
 <h1>Elements of Design</h1>
-<p>Digital Technologies Website Project</p>
+<p>Digital Technologies Project Website</p>
 </header>
 
 <nav>
@@ -75,54 +123,132 @@ margin-top:40px;
 <a href="#evaluation">Evaluation</a>
 </nav>
 
-<section>
+<div class="container">
+
+<div class="card">
+<h2>About This Website</h2>
+<p>
+This website explains the key Elements of Design used in visual communication and digital design.
+Each section explains an element, shows an example image, and includes an avatar video describing the concept.
+</p>
+</div>
 
 <div class="card" id="line">
 <h2>Line</h2>
-<p>Lines guide the viewer’s eye and create structure in a design.</p>
+<p>
+Lines guide the viewer's eye and create structure in designs. They can be straight, curved, thick, thin, or dashed.
+Lines are used to separate content and create shapes.
+</p>
+
+<img class="example-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Line-art.svg">
+
+<div class="video-box">
+Insert your avatar video explaining LINE here
+</div>
+
 </div>
 
 <div class="card" id="shape">
 <h2>Shape</h2>
-<p>Shapes are created when lines connect, such as circles, squares, and triangles.</p>
+<p>
+Shapes are formed when lines connect together. Common shapes include circles, squares, and triangles.
+Shapes help organize design layouts and create visual interest.
+</p>
+
+<img class="example-img" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Basic_shapes.svg">
+
+<div class="video-box">
+Insert your avatar video explaining SHAPE here
+</div>
+
 </div>
 
 <div class="card" id="colour">
 <h2>Colour</h2>
-<p>Colour creates emotion and meaning in design and helps attract attention.</p>
+<p>
+Colour communicates emotion and meaning. Designers use colour to attract attention,
+create contrast, and establish mood within a design.
+</p>
+
+<img class="example-img" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/RGB_illumination.jpg">
+
+<div class="video-box">
+Insert your avatar video explaining COLOUR here
+</div>
+
 </div>
 
 <div class="card" id="texture">
 <h2>Texture</h2>
-<p>Texture describes how something might feel or appear visually.</p>
+<p>
+Texture refers to the surface quality of an object. In digital design it gives the appearance
+of depth and realism, making elements look smooth, rough, or patterned.
+</p>
+
+<img class="example-img" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Texture_example.jpg">
+
+<div class="video-box">
+Insert your avatar video explaining TEXTURE here
+</div>
+
 </div>
 
 <div class="card" id="space">
 <h2>Space</h2>
-<p>Space is the area around elements in a design and helps improve readability.</p>
+<p>
+Space refers to the area around elements in a design. White space helps make
+designs easier to read and prevents layouts from looking cluttered.
+</p>
+
+<img class="example-img" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Whitespace_example.png">
+
+<div class="video-box">
+Insert your avatar video explaining SPACE here
+</div>
+
 </div>
 
 <div class="card" id="evaluation">
-<h2>SWOT Analysis</h2>
+<h2>SWOT Analysis (Evaluation)</h2>
 
+<div class="swot">
+
+<div>
 <h3>Strengths</h3>
-<p>I created a website explaining the elements of design clearly.</p>
+<p>
+The website clearly explains each element of design and includes images and video explanations.
+</p>
+</div>
 
+<div>
 <h3>Weaknesses</h3>
-<p>The website could include more images and examples.</p>
+<p>
+The website could include more examples or additional design elements.
+</p>
+</div>
 
+<div>
 <h3>Opportunities</h3>
-<p>I could improve the website with more videos or interactive features.</p>
+<p>
+Interactive content or additional multimedia could improve the learning experience.
+</p>
+</div>
 
+<div>
 <h3>Threats</h3>
-<p>Technical issues or time limits could affect improvements.</p>
+<p>
+Technical issues or limited time could affect improvements to the website.
+</p>
+</div>
 
 </div>
 
-</section>
+</div>
+
+</div>
 
 <footer>
-<p>Elements of Design Project</p>
+<p>Digital Technologies – Elements of Design Website</p>
 </footer>
 
 </body>
