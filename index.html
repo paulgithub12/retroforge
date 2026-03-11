@@ -3,119 +3,58 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RetroForge Consoles</title>
+<title>Elements of Design Project</title>
 
 <style>
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-font-family:Arial,Helvetica,sans-serif;
-}
 
 body{
-background:#0f0f0f;
-color:white;
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#eef2f5;
 }
 
 header{
-background:black;
-padding:20px;
+background:#1f2937;
+color:white;
+padding:25px;
 text-align:center;
-border-bottom:2px solid #00ffa6;
-}
-
-header h1{
-color:#00ffa6;
 }
 
 nav{
-margin-top:10px;
+background:#374151;
+padding:12px;
+text-align:center;
 }
 
 nav a{
 color:white;
-margin:0 10px;
+margin:15px;
 text-decoration:none;
-}
-
-.hero{
-padding:80px 20px;
-text-align:center;
-background:#1c1c1c;
-}
-
-.hero h2{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.hero button{
-padding:12px 30px;
-background:#00ffa6;
-border:none;
-border-radius:6px;
 font-weight:bold;
-cursor:pointer;
 }
 
-.section{
-padding:60px 20px;
-max-width:1100px;
+section{
+max-width:1000px;
 margin:auto;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:30px;
+padding:40px;
 }
 
 .card{
-background:#1b1b1b;
-border-radius:12px;
-padding:20px;
-text-align:center;
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-margin-bottom:15px;
-}
-
-.price{
-color:#00ffa6;
-font-size:22px;
-margin:10px 0;
-}
-
-.buy{
-background:#00ffa6;
-border:none;
-padding:10px;
-border-radius:6px;
-width:100%;
-cursor:pointer;
-font-weight:bold;
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:8px;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
 }
 
 footer{
+background:#1f2937;
+color:white;
 text-align:center;
-padding:30px;
-background:black;
+padding:20px;
+margin-top:40px;
 }
 
-.cart{
-position:fixed;
-top:20px;
-right:20px;
-background:black;
-border:1px solid #00ffa6;
-padding:10px 16px;
-border-radius:8px;
-}
 </style>
 
 </head>
@@ -123,93 +62,68 @@ border-radius:8px;
 <body>
 
 <header>
-<h1>RetroForge</h1>
-<p>Custom Retro Consoles</p>
-
-<nav>
-<a href="#">Home</a>
-<a href="#shop">Shop</a>
-<a href="#about">About</a>
-</nav>
+<h1>Elements of Design</h1>
+<p>Digital Technologies Website Project</p>
 </header>
 
-<div class="cart">
-Cart: <span id="cartCount">0</span>
+<nav>
+<a href="#line">Line</a>
+<a href="#shape">Shape</a>
+<a href="#colour">Colour</a>
+<a href="#texture">Texture</a>
+<a href="#space">Space</a>
+<a href="#evaluation">Evaluation</a>
+</nav>
+
+<section>
+
+<div class="card" id="line">
+<h2>Line</h2>
+<p>Lines guide the viewer’s eye and create structure in a design.</p>
 </div>
 
-<section class="hero">
-<h2>Hand-Built Retro Gaming</h2>
-<p>Custom GameBoy, DS, and 3DS consoles upgraded for modern play.</p>
-<button onclick="document.getElementById('shop').scrollIntoView()">Shop Consoles</button>
-</section>
-
-<section class="section" id="shop">
-
-<h2 style="text-align:center;margin-bottom:40px;">Featured Builds</h2>
-
-<div class="products">
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Game-Boy-Advance-SP-Mk2-Blue.jpg">
-<h3>Custom GameBoy Advance</h3>
-<p>IPS screen • USB-C charging • new shell</p>
-<div class="price">$399</div>
-<button class="buy" onclick="addToCart()">Add to Cart</button>
+<div class="card" id="shape">
+<h2>Shape</h2>
+<p>Shapes are created when lines connect, such as circles, squares, and triangles.</p>
 </div>
 
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Nintendo-DS-Lite-Black-Open.jpg">
-<h3>Custom DS Lite</h3>
-<p>Refurbished • new shell • bright screens</p>
-<div class="price">$299</div>
-<button class="buy" onclick="addToCart()">Add to Cart</button>
+<div class="card" id="colour">
+<h2>Colour</h2>
+<p>Colour creates emotion and meaning in design and helps attract attention.</p>
 </div>
 
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Nintendo-3DS-AquaOpen.jpg">
-<h3>Custom Nintendo 3DS</h3>
-<p>Restored • upgraded battery • cleaned internals</p>
-<div class="price">$449</div>
-<button class="buy" onclick="addToCart()">Add to Cart</button>
+<div class="card" id="texture">
+<h2>Texture</h2>
+<p>Texture describes how something might feel or appear visually.</p>
 </div>
 
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Nintendo-Game-Boy-Color-FL.jpg">
-<h3>Custom GameBoy Color</h3>
-<p>Backlit IPS • glass lens • new speaker</p>
-<div class="price">$349</div>
-<button class="buy" onclick="addToCart()">Add to Cart</button>
+<div class="card" id="space">
+<h2>Space</h2>
+<p>Space is the area around elements in a design and helps improve readability.</p>
 </div>
 
+<div class="card" id="evaluation">
+<h2>SWOT Analysis</h2>
+
+<h3>Strengths</h3>
+<p>I created a website explaining the elements of design clearly.</p>
+
+<h3>Weaknesses</h3>
+<p>The website could include more images and examples.</p>
+
+<h3>Opportunities</h3>
+<p>I could improve the website with more videos or interactive features.</p>
+
+<h3>Threats</h3>
+<p>Technical issues or time limits could affect improvements.</p>
+
 </div>
-</section>
-
-<section class="section" id="about">
-
-<h2 style="text-align:center;margin-bottom:20px;">About RetroForge</h2>
-
-<p style="max-width:700px;margin:auto;text-align:center;">
-RetroForge builds upgraded classic gaming consoles. Every system is cleaned,
-restored, and fitted with modern upgrades like IPS displays, USB-C charging,
-and premium shells.
-</p>
 
 </section>
 
 <footer>
-<p>© 2026 RetroForge Consoles</p>
+<p>Elements of Design Project</p>
 </footer>
-
-<script>
-
-let cart = 0
-
-function addToCart(){
-cart++
-document.getElementById("cartCount").innerText = cart
-}
-
-</script>
 
 </body>
 </html>
